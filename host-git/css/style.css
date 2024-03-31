@@ -1,0 +1,196 @@
+/* font-style */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* variabel font  */
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.dm-sans-thin {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.dm-sans-extralight {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.dm-sans-light {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.dm-sans-regular {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-sans-medium {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.dm-sans-semibold {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.dm-sans-bold {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+
+/* Navbar asset */
+.button-Sin {
+  background-color: #fff;
+  border: 3px solid #121920;
+  border-radius: 0;
+  transition: 0.15s;
+}
+
+.button-Sup {
+  background-color: #121920;
+  border: 3px solid #121920;
+  border-radius: 0;
+  color: #fff;
+}
+
+.button-Sup:hover {
+  background-color: #121920;
+  border: 3px solid #121920;
+  border-radius: 0;
+  color: #fff;
+}
+
+.button-Sin:hover {
+  border: 3px solid #121920;
+  background-color: #121920;
+  color: #fff;
+}
+
+/* container-1 assets */
+
+.button-learn {
+  background-color: #2ECC71;
+  border-radius: 0;
+  color: #092917;
+}
+
+.button-learn:hover {
+  background-color: #2ECC71;
+  border-radius: 0;
+  color: #092917;
+}
+
+.img-c1 {
+  width: 600px;
+  height: 400px;
+}
+
+/* container-2 assets */
+
+.img-c2 {
+  width: auto;
+  height: 300px;
+}
+
+.link-c2 {
+  transition: transform .5s, background-color .2s;
+  transition-timing-function: ease-in-out;
+}
+
+.link-c2:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
+}
+
+/* container-3 assets */
+
+.event-c3 {
+  width: 100%;
+  height: 380px;
+}
+
+/* container-4 assets */
+
+.h-c {
+  display: block;
+  position: relative;
+}
+
+.content-t {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: 0.3 ease-in-out;
+}
+
+.content-t:hover {
+  opacity: 1;
+}
