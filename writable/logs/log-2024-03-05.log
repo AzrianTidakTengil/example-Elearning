@@ -1,0 +1,195 @@
+ERROR - 2024-03-05 00:01:24 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'test-ci4', 3306, '', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(1410): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(1429): CodeIgniter\Database\BaseConnection->listTables()
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MigrationRunner.php(757): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MigrationRunner.php(161): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CLI/Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(1410): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(1429): CodeIgniter\Database\BaseConnection->listTables()
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MigrationRunner.php(757): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MigrationRunner.php(161): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CLI/Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/spark(102): CodeIgniter\CLI\Console->run()
+#10 {main}
+CRITICAL - 2024-03-05 00:02:23 --> Error: Class "CodeIgniter\Database\MySQL\Connection" not found
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver('MySQL', 'Connection', [...])
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH/Common.php(365): CodeIgniter\Database\Config::connect('default', true)
+ 4 SYSTEMPATH/Database/MigrationRunner.php(144): db_connect(null)
+ 5 SYSTEMPATH/Config/Services.php(417): CodeIgniter\Database\MigrationRunner->__construct(Object(Config\Migrations), null)
+ 6 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::migrations(Object(Config\Migrations), null, false)
+ 7 SYSTEMPATH/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('migrations', [...])
+ 8 SYSTEMPATH/Config/Services.php(412): CodeIgniter\Config\BaseService::getSharedInstance('migrations', null, null)
+ 9 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::migrations()
+10 SYSTEMPATH/Commands/Database/Migrate.php(69): CodeIgniter\Config\BaseService::__callStatic('migrations', [])
+11 SYSTEMPATH/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run([])
+12 SYSTEMPATH/CLI/Console.php(46): CodeIgniter\CLI\Commands->run('migrate', [])
+13 ROOTPATH/spark(102): CodeIgniter\CLI\Console->run()
+ERROR - 2024-03-05 00:03:59 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'test-ci4', 3306, '', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(1410): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(1429): CodeIgniter\Database\BaseConnection->listTables()
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MigrationRunner.php(757): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MigrationRunner.php(161): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CLI/Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(1410): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(1429): CodeIgniter\Database\BaseConnection->listTables()
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MigrationRunner.php(757): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MigrationRunner.php(161): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CLI/Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/spark(102): CodeIgniter\CLI\Console->run()
+#10 {main}
+ERROR - 2024-03-05 13:24:05 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'test-ci4', 3306, '', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(1410): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(1429): CodeIgniter\Database\BaseConnection->listTables()
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MigrationRunner.php(757): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MigrationRunner.php(161): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CLI/Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(1410): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(1429): CodeIgniter\Database\BaseConnection->listTables()
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MigrationRunner.php(757): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MigrationRunner.php(161): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CLI/Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/spark(102): CodeIgniter\CLI\Console->run()
+#10 {main}
+ERROR - 2024-03-05 13:25:24 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'test-ci4', 3306, '', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(1410): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(1429): CodeIgniter\Database\BaseConnection->listTables()
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MigrationRunner.php(757): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MigrationRunner.php(161): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CLI/Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(1410): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(1429): CodeIgniter\Database\BaseConnection->listTables()
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MigrationRunner.php(757): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MigrationRunner.php(161): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CLI/Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/spark(102): CodeIgniter\CLI\Console->run()
+#10 {main}
+ERROR - 2024-03-05 13:27:13 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'test-ci4', 3306, '', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(1410): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(1429): CodeIgniter\Database\BaseConnection->listTables()
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MigrationRunner.php(757): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MigrationRunner.php(637): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Database/MigrateStatus.php(114): CodeIgniter\Database\MigrationRunner->getHistory('')
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\MigrateStatus->run(Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CLI/Console.php(46): CodeIgniter\CLI\Commands->run('migrate:status', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(1410): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(1429): CodeIgniter\Database\BaseConnection->listTables()
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MigrationRunner.php(757): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MigrationRunner.php(637): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Database/MigrateStatus.php(114): CodeIgniter\Database\MigrationRunner->getHistory('')
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\MigrateStatus->run(Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CLI/Console.php(46): CodeIgniter\CLI\Commands->run('migrate:status', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/spark(102): CodeIgniter\CLI\Console->run()
+#10 {main}
+CRITICAL - 2024-03-05 13:27:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(1410): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FROM `test-ci4`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(1429): CodeIgniter\Database\BaseConnection->listTables()
+ 4 SYSTEMPATH/Database/MigrationRunner.php(757): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+ 5 SYSTEMPATH/Database/MigrationRunner.php(637): CodeIgniter\Database\MigrationRunner->ensureTable()
+ 6 SYSTEMPATH/Commands/Database/MigrateStatus.php(114): CodeIgniter\Database\MigrationRunner->getHistory('')
+ 7 SYSTEMPATH/CLI/Commands.php(65): CodeIgniter\Commands\Database\MigrateStatus->run([])
+ 8 SYSTEMPATH/CLI/Console.php(46): CodeIgniter\CLI\Commands->run('migrate:status', [])
+ 9 ROOTPATH/spark(102): CodeIgniter\CLI\Console->run()
+ERROR - 2024-03-05 13:29:06 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'test-ci4', 3306, '', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(1410): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(1429): CodeIgniter\Database\BaseConnection->listTables()
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MigrationRunner.php(757): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MigrationRunner.php(161): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CLI/Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(1410): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(1429): CodeIgniter\Database\BaseConnection->listTables()
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MigrationRunner.php(757): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MigrationRunner.php(161): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CLI/Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/spark(102): CodeIgniter\CLI\Console->run()
+#10 {main}

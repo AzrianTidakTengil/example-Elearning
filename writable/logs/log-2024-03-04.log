@@ -1,0 +1,1204 @@
+ERROR - 2024-03-04 02:08:23 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'look', 3306, '', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/News.php(16): CodeIgniter\BaseModel->findAll()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\News->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/News.php(16): CodeIgniter\BaseModel->findAll()
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\News->index()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#11 {main}
+CRITICAL - 2024-03-04 02:08:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `newmodels`
+WHERE `status` = :status:', [...], false)
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Controllers/News.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php')
+ERROR - 2024-03-04 02:08:26 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'look', 3306, '', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/News.php(16): CodeIgniter\BaseModel->findAll()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\News->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/News.php(16): CodeIgniter\BaseModel->findAll()
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\News->index()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#11 {main}
+CRITICAL - 2024-03-04 02:08:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `newmodels`
+WHERE `status` = :status:', [...], false)
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Controllers/News.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php')
+ERROR - 2024-03-04 02:08:35 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'look', 3306, '', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/News.php(16): CodeIgniter\BaseModel->findAll()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\News->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/News.php(16): CodeIgniter\BaseModel->findAll()
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\News->index()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#11 {main}
+CRITICAL - 2024-03-04 02:08:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `newmodels`
+WHERE `status` = :status:', [...], false)
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Controllers/News.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php')
+ERROR - 2024-03-04 04:29:17 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'look', 3306, '', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/News.php(16): CodeIgniter\BaseModel->findAll()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\News->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/News.php(16): CodeIgniter\BaseModel->findAll()
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\News->index()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#11 {main}
+CRITICAL - 2024-03-04 04:29:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `newmodels`
+WHERE `status` = :status:', [...], false)
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Controllers/News.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php')
+ERROR - 2024-03-04 04:29:41 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'look', 3306, '', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/News.php(16): CodeIgniter\BaseModel->findAll()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\News->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/News.php(16): CodeIgniter\BaseModel->findAll()
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\News->index()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#11 {main}
+CRITICAL - 2024-03-04 04:29:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `newmodels`
+WHERE `status` = :status:', [...], false)
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Controllers/News.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php')
+ERROR - 2024-03-04 04:29:42 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'look', 3306, '', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/News.php(16): CodeIgniter\BaseModel->findAll()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\News->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/News.php(16): CodeIgniter\BaseModel->findAll()
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\News->index()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#11 {main}
+CRITICAL - 2024-03-04 04:29:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `newmodels`
+WHERE `status` = :status:', [...], false)
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Controllers/News.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php')
+ERROR - 2024-03-04 04:29:58 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'look', 3306, '', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/News.php(16): CodeIgniter\BaseModel->findAll()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\News->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/News.php(16): CodeIgniter\BaseModel->findAll()
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\News->index()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#11 {main}
+CRITICAL - 2024-03-04 04:29:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `newmodels`
+WHERE `status` = :status:', [...], false)
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Controllers/News.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php')
+ERROR - 2024-03-04 04:30:48 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'look', 3306, '', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/News.php(16): CodeIgniter\BaseModel->findAll()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\News->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/News.php(16): CodeIgniter\BaseModel->findAll()
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\News->index()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#11 {main}
+CRITICAL - 2024-03-04 04:30:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `newmodels`
+WHERE `status` = :status:', [...], false)
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Controllers/News.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php')
+ERROR - 2024-03-04 04:30:50 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'look', 3306, '', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/News.php(16): CodeIgniter\BaseModel->findAll()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\News->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/News.php(16): CodeIgniter\BaseModel->findAll()
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\News->index()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#11 {main}
+CRITICAL - 2024-03-04 04:30:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `newmodels`
+WHERE `status` = :status:', [...], false)
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Controllers/News.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php')
+ERROR - 2024-03-04 07:15:23 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'test-ci4', 3306, '', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\Barang->index()
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\Barang->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#12 {main}
+CRITICAL - 2024-03-04 07:15:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `barangs`', [], false)
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Barang->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php')
+ERROR - 2024-03-04 07:18:09 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'test-ci4', 3306, '', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\Barang->index()
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\Barang->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#12 {main}
+CRITICAL - 2024-03-04 07:18:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `barangs`', [], false)
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Barang->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php')
+ERROR - 2024-03-04 07:18:10 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'test-ci4', 3306, '', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\Barang->index()
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\Barang->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#12 {main}
+CRITICAL - 2024-03-04 07:18:10 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `barangs`', [], false)
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Barang->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php')
+ERROR - 2024-03-04 07:18:11 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'test-ci4', 3306, '', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\Barang->index()
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\Barang->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#12 {main}
+CRITICAL - 2024-03-04 07:18:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `barangs`', [], false)
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Barang->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php')
+ERROR - 2024-03-04 07:18:16 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'test-ci4', 3306, '', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\Barang->index()
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\Barang->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#12 {main}
+CRITICAL - 2024-03-04 07:18:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `barangs`', [], false)
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Barang->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php')
+ERROR - 2024-03-04 07:18:18 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'test-ci4', 3306, '', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\Barang->index()
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\Barang->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#12 {main}
+CRITICAL - 2024-03-04 07:18:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `barangs`', [], false)
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Barang->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php')
+ERROR - 2024-03-04 07:19:20 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'test-ci4', 3306, '', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\Barang->index()
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\Barang->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#12 {main}
+CRITICAL - 2024-03-04 07:19:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `barangs`', [], false)
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Barang->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php')
+ERROR - 2024-03-04 07:19:20 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'test-ci4', 3306, '', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\Barang->index()
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\Barang->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#12 {main}
+CRITICAL - 2024-03-04 07:19:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `barangs`', [], false)
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Barang->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php')
+ERROR - 2024-03-04 07:19:21 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'test-ci4', 3306, '', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\Barang->index()
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\Barang->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#12 {main}
+CRITICAL - 2024-03-04 07:19:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `barangs`', [], false)
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Barang->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php')
+ERROR - 2024-03-04 07:19:21 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'test-ci4', 3306, '', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\Barang->index()
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\Barang->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#12 {main}
+CRITICAL - 2024-03-04 07:19:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `barangs`', [], false)
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Barang->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php')
+ERROR - 2024-03-04 07:19:35 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'test-ci4', 3306, '', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\Barang->index()
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\Barang->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#12 {main}
+CRITICAL - 2024-03-04 07:19:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `barangs`', [], false)
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Barang->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php')
+ERROR - 2024-03-04 07:19:37 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'test-ci4', 3306, '', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\Barang->index()
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\Barang->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#12 {main}
+CRITICAL - 2024-03-04 07:19:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `barangs`', [], false)
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Barang->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php')
+ERROR - 2024-03-04 07:19:38 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'test-ci4', 3306, '', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\Barang->index()
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\Barang->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#12 {main}
+CRITICAL - 2024-03-04 07:19:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `barangs`', [], false)
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Barang->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php')
+ERROR - 2024-03-04 07:20:08 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'test-ci4', 3306, '', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\Barang->index()
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\Barang->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#12 {main}
+CRITICAL - 2024-03-04 07:20:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `barangs`', [], false)
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Barang->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php')
+ERROR - 2024-03-04 07:20:09 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'test-ci4', 3306, '', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\Barang->index()
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\Barang->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#12 {main}
+CRITICAL - 2024-03-04 07:20:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `barangs`', [], false)
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Barang->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php')
+ERROR - 2024-03-04 07:20:09 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'test-ci4', 3306, '', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\Barang->index()
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\Barang->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#12 {main}
+CRITICAL - 2024-03-04 07:20:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `barangs`', [], false)
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Barang->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php')
+ERROR - 2024-03-04 07:21:18 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'test-ci4', 3306, '', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\Barang->index()
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+#6 /Applications/XAMPP/xamppfiles/htdocs/ci_4/app/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+#7 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(941): App\Controllers\Barang->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#9 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/ci_4/system/Commands/Server/rewrite.php(47): require_once('/Applications/X...')
+#12 {main}
+CRITICAL - 2024-03-04 07:21:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `barangs`', [], false)
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Models/BarangModel.php(45): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/Barang.php(14): App\Models\BarangModel->getBarang()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Barang->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Applications/XAMPP/xamppfiles/htdocs/ci_4/public/index.php')
